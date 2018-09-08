@@ -7,5 +7,5 @@ $(function() {
 });
 
 function setWallpaperPic() {
-	$(".banner").css({"background-image" : $(this).attr("id")});
+	$(".banner").css({"background-image" : "url(" + $(".banner").attr("id") + ")"});
 }
