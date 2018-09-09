@@ -24,7 +24,10 @@ function setBannerPic() {
 }
 
 function setBannerSize() {
-	$(".banner").css({"height" : String(BANNER_HEIGHT) + "px"});
+	$(".banner").css({
+		"height" : String(BANNER_HEIGHT) + "px",
+		"background-size" : "100% " + String(BANNER_HEIGHT) + "px"
+	});
 }
 
 /*===================================
