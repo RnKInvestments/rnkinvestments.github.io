@@ -8,7 +8,7 @@ hr {height: 1px; border: none}
 /*===================================
   Banner
   ===================================*/
-.banner {}
+.banner {box-shadow: 0 1px 3px rgba(0, 0, 0, 1)}
 
 /*===================================
   General Content Styling
