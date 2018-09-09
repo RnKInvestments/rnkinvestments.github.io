@@ -10,10 +10,8 @@ var BANNER_HEIGHT;
 $(function() {
 	setBannerPic();
 	//Resize functions
-	$window.resize(function resize(){
-		BANNER_HEIGHT = $window.width() * 0.25;
-		setBannerSize();
-	});
+	windowResize();
+	$window.resize(function resize(){windowResize();});
 });
 
 
@@ -27,4 +25,13 @@ function setBannerPic() {
 
 function setBannerSize() {
 	$(".banner").css({"height" : String(BANNER_HEIGHT) + "px"});
+}
+
+/*===================================
+  Misc. Functions
+  ===================================*/
+function windowResize() {
+	//Do the Banner stuff
+	BANNER_HEIGHT = $window.width() * 0.25;
+	setBannerSize();
 }
