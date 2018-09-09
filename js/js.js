@@ -24,11 +24,11 @@ function setBannerPic() {
 }
 
 function setBannerSize() {
+	//Use images strictly 4:1
 	$(".banner").css({
 		"height" : String(BANNER_HEIGHT) + "px",
 		"background-size" : "100% " + String(BANNER_HEIGHT) + "px"
 	});
-	console.log("Width: " + $(".banner").width() + "Height: " + $(".banner").height());
 }
 
 /*===================================
