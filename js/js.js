@@ -28,6 +28,7 @@ function setBannerSize() {
 		"height" : String(BANNER_HEIGHT) + "px",
 		"background-size" : "100% " + String(BANNER_HEIGHT) + "px"
 	});
+	console.log("Width: " + $(".banner").width() + "Height: " + $(".banner").height());
 }
 
 /*===================================
