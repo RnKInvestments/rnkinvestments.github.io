@@ -13,5 +13,5 @@ hr {height: 1px; border: none}
 /*===================================
   General Content Styling
   ===================================*/
-#content {width: 100%; padding: 0 10%}
+#content {width: 80%; padding: 0 10%}
 #content hr {background-color: #ccc}
