@@ -1,3 +1,4 @@
+a
 ## CACHING ##
 # Image files
 <filesMatch "\.(jpg|jpeg|png|gif|ico)$">
