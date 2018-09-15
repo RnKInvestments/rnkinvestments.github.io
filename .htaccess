@@ -5,6 +5,6 @@ Header set Cache-Control "max-age=86400, public"
 </filesMatch>
 
 # CSS and JS files
-<filesMatch ".(css|js)%">
+<filesMatch ".(css|js)$">
 Header set Cache-Control "max-age=900, public"
 </filesMatch>
