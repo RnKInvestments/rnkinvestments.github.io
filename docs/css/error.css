@@ -1,0 +1,12 @@
+/*===================================
+  General Syling
+  ===================================*/
+body {margin: 0; padding: 0; background-color: #e8e8e8}
+h1, h2, h3, h4, h5, h6, p {margin: 0; font-family: sans-serif}
+#content {width: 80%; margin: 0 10%; padding: 16px 0; overflow: hidden}
+
+/*===================================
+  Error Message
+  ===================================*/
+#error-text {margin: 0 20%; padding: 16px; text-align: center; float: left; width: 60%; background-color: #fff; border-radius: 4px; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); color: #333}
+#error-text h1 {margin-bottom: 32px}
