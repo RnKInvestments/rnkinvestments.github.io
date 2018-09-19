@@ -1,0 +1,71 @@
+/*===================================
+  General Syling
+  ===================================*/
+body {margin: 0; padding: 0; background-color: #e8e8e8; overflow-x: hidden}
+p, h1, h2, h3, h4, h5, h6 {margin: 0; font-family: sans-serif}
+hr {height: 1px; border: none; clear: both; float: left; width: 100%}
+
+/*===================================
+  Banner
+  ===================================*/
+.banner {box-shadow: 0 1px 3px rgba(0, 0, 0, 1)}
+
+/*===================================
+  General Content Styling
+  ===================================*/
+#content {width: 80%; padding: 16px 10%; float: left; word-wrap: break-word}
+#content hr {background-color: #ccc}
+.container {float: left; margin-top: 16px; width: 100%}
+
+/*===================================
+  Text Card
+  ===================================*/
+.text-card {background-color: #fff; padding: 16px; border-left: 4px solid #c44242; box-shadow: 0 1px 3px rgba(0,0,0,0.25); margin-bottom: 16px}
+.text-card ul {margin: 0; padding: 0; list-style: none; font-family: sans-serif; border-left: 4px solid #c44242; box-shadow: 0 1px 3px rgba(0,0,0,0.25)}
+.text-card li {padding: 8px 0}
+.text-card .item {position: relative; left: 8px}
+.text-card p {padding: 16px 0}
+
+/*===================================
+  Image Card
+  ===================================*/
+.image-card {background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.25); border-left: 4px solid #359953; float: left; margin-bottom: 16px}
+.image-card:nth-child(even) {float: right}
+.image-card.half-width {width: calc(50% - 16px)}
+.image-card img {width: 100%}
+.image-card .text {padding: 16px}
+
+/*===================================
+  Mission 'Card'
+  ===================================*/
+#mission h1 {margin-bottom: 16px}
+
+/*===================================
+  People Card
+  ===================================*/
+#people {width: 100%;}
+.person-card {float: left; width: 100%; box-shadow: 0 1px 3px rgba(0,0,0,0.25); margin-bottom: 16px}
+.person-card-profile {float: left; width: calc(30% - 34px); background-color: #fff; padding: 16px; border-left: 4px solid #17469e}
+.person-card-profile img {display: block; border-radius: 50%; width: 50%; margin: auto}
+.person-card-bio {float: right; width: calc(70% - 34px); padding: 16px;}
+.person-card-bio h1 {margin-bottom: 16px;}
+.person-card-bio ul {margin: 0; padding: 0; list-style: none; font-family: sans-serif; border-left: 4px solid #17469e; background-color: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.25)}
+.person-card-bio li {padding: 8px 0}
+.person-card-bio .item {position: relative; left: 8px;}
+
+/*===================================
+  Media queries
+  ===================================*/
+@media only screen and (max-width: 1000px) {
+	.person-card {width: calc(50% - 16px)}
+	.person-card:nth-child(even) {float: right}
+	.person-card-profile {width: calc(100% - 34px)}
+	.person-card-bio {width: calc(100% - 30px); float: left}
+}
+
+@media only screen and (max-width: 480px) {
+	.person-card {width: calc(100%)}
+	.person-card:nth-child(even) {float: left}
+	.person-card-profile {width: calc(100% - 34px)}
+	.person-card-bio {width: calc(100% - 30px); float: left}
+}

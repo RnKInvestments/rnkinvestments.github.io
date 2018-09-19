@@ -1,3 +1,6 @@
+##ERROR PAGES##
+ErrorDocument 404	/pages/error_pages/404.html
+
 ## CACHING ##
 # Image files
 <filesMatch "\.(jpg|jpeg|png|gif|ico)$">

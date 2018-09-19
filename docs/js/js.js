@@ -9,11 +9,14 @@ var BANNER_HEIGHT;
   ===================================*/
 $(function() {
 	setBannerPic();
-	//Resize functions
+
 	windowResize();
 	$window.resize(function resize(){windowResize();});
+
 	//Set the countdowns
 	if ($(".countdown").length > 0) setCountdowns();
+
+	getPersonCard();
 });
 
 
@@ -31,6 +34,43 @@ function setBannerSize() {
 		"height" : String(BANNER_HEIGHT) + "px",
 		"background-size" : "100% " + String(BANNER_HEIGHT) + "px"
 	});
+}
+
+/*===================================
+  Create Person Card
+  ===================================*/
+//This function sends the request for the data and puts it into the return function
+function getPersonCard() {
+	for (var i = 0; i < $(".person-card").length; i++) {
+		var id = $($(".person-card")[i]).attr("id");
+		var url = "/pages/persons/" + id + ".txt";
+		$.ajax({url: url, type: "get", success: createPersonCard(id)});
+	}
+}
+
+//This function processes the data
+function createPersonCard(id) {
+	return function(data) {
+		var info = data.split("\n");
+		for (var j = 0; j < info.length - j; j++) {
+			info[j] = info[j].slice(0, info[j].length - 1);
+		}
+		$("#" + id).append(
+			"<div class='person-card-profile'>\
+				<img src=" + info[0] + ">\
+				<h1>" + info[1] + "</h1>\
+				<hr>\
+				<p>" + info[2] + "</p>\
+			</div>\
+			<div class='person-card-bio'>\
+				<h1>Qualifications/Achievements</h1>\
+				<ul></ul>\
+			</div>"
+		);
+		for (var j = 3; j < info.length; j++) {
+			$("#" + id + " ul").append("<li><span class='item'>" + info[j] + "</span></li>");
+		}
+	}
 }
 
 /*===================================
