@@ -52,9 +52,6 @@ function getPersonCard() {
 function createPersonCard(id) {
 	return function(data) {
 		var info = data.split("\n");
-		for (var j = 0; j < info.length - j; j++) {
-			info[j] = info[j].slice(0, info[j].length - 1);
-		}
 		$("#" + id).append(
 			"<div class='person-card-profile'>\
 				<img src=" + info[0] + ">\
