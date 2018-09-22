@@ -54,6 +54,17 @@ hr {height: 1px; border: none; clear: both; float: left; width: 100%}
 .person-card-bio .item {position: relative; left: 8px;}
 
 /*===================================
+  Footer
+  ===================================*/
+#footer {float: left; background-color: #17469e; width: 100%; padding: 16px; box-shadow: 0 -1px 3px rgba(0,0,0,0.5)}
+#footer h1 {color: #fff}
+#footer form {float: left; font-family: sans-serif; padding: 16px; color: #fff; width: 100%}
+#footer label {float: left; clear: left}
+#footer input, textarea {float: left; clear: left; margin-bottom: 16px; border: none; padding: 8px; width: 50%}
+#footer textarea {resize: vertical}
+#footer button {float: left; clear: left; border: none; padding: 16px; width: 10%; background-color: #fff}
+
+/*===================================
   Media queries
   ===================================*/
 /* Tabletish */

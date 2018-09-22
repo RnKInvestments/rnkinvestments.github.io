@@ -16,7 +16,9 @@ $(function() {
 	//Set the countdowns
 	if ($(".countdown").length > 0) setCountdowns();
 
+	//Load in stuff
 	getPersonCard();
+	$("#footer").load("/pages/footer.html");
 });
 
 
@@ -123,3 +125,12 @@ function windowResize() {
 	BANNER_HEIGHT = $window.width() * 0.25;
 	setBannerSize();
 }
+
+$("#contact").submit(function(e){
+	e.preventDefault();
+	$.ajax({
+		url: "/docs/php/email.php",
+		type: "post",
+		data: $("#contact").serialize
+	});
+});
