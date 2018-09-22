@@ -57,7 +57,7 @@ hr {height: 1px; border: none; clear: both; float: left; width: 100%}
   Footer
   ===================================*/
 #footer {float: left; background-color: #17469e; width: 100%; padding: 16px; box-shadow: 0 -1px 3px rgba(0,0,0,0.5)}
-#footer h1 {color: #fff}
+#footer h1, #footer p {color: #fff}
 #footer form {float: left; font-family: sans-serif; padding: 16px; color: #fff; width: 100%}
 #footer label {float: left; clear: left}
 #footer input, textarea {float: left; clear: left; margin-bottom: 16px; border: none; padding: 8px; width: 50%}
