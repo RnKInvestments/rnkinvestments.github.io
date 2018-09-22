@@ -131,6 +131,6 @@ $("#contact").submit(function(e){
 	$.ajax({
 		url: "/docs/php/email.php",
 		type: "post",
-		data: $("#contact").serialize
+		data: $("#contact").serialize()
 	});
 });
